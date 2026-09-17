@@ -15,12 +15,13 @@ Este repositorio contiene la implementación completa de un pipeline de visión 
 │   └── Reconstruccion_Estereo.ipynb  # Cuaderno con la ejecución completa y visualizaciones 3D
 ├── resultados/
 │   ├── deteccion_esquinas/     # 10 pares de imágenes con las esquinas del tablero detectadas
+│   ├── mapas_disparidad/       # Mapas de disparidad comparativos generados por SGBM y RAFT
 │   ├── parametros_calibracion/ # Archivos (.npz y .txt) con matrices K, R, T, E, F y distorsión
 │   └── rectificacion_estereo/  # Matriz de reproyección Q e imágenes rectificadas por objeto
 ├── README.md                   # Documentación técnica del proyecto
 ```
 
-> **Nota sobre los resultados:** Para optimizar el almacenamiento del repositorio y cumplir con las limitaciones de espacio de GitHub, los datos de inspección livianos (detección de esquinas, matrices calculadas e imágenes rectificadas) se encuentran subidos en la carpeta `resultados/`. Los mapas de disparidad pesados de alta resolución y las nubes de puntos 3D interactivas se conservan generados y listos para su inspección directa dentro del cuaderno ejecutable `notebooks/Reconstruccion_Estereo.ipynb`.
+> **Nota sobre los resultados y la reconstrucción 3D:** En la carpeta `resultados/` se incluyen las imágenes de inspección, las matrices calculadas, los pares rectificados y las imágenes de los mapas de disparidad obtenidos (SGBM y RAFT). Dado que los datos de la nube de puntos 3D tienen un peso considerable y requieren rendering dinámico para interactuar con ellos (rotación, zoom y desplazamiento), **la reconstrucción 3D debe visualizarse directamente dentro del cuaderno** `notebooks/Reconstruccion_Estereo.ipynb`.
 
 ---
 
@@ -40,5 +41,5 @@ Este repositorio contiene la implementación completa de un pipeline de visión 
 
 ---
 
-## 🚀 Visualización:
-   Abre el cuaderno `notebooks/Reconstruccion_Estereo.ipynb` en Google Colab o Jupyter Notebook para revisar las celdas ejecutadas con las métricas, mapas de disparidad y renderizado 3D de cada objeto.
+## 🚀 Visualización Interactiva 3D
+   Abre el cuaderno `notebooks/Reconstruccion_Estereo.ipynb` en Google Colab o Jupyter Notebook para ejecutar y explorar las celdas de renderizado 3D interactivo con Plotly/Open3D.
