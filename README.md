@@ -23,6 +23,8 @@ Este repositorio contiene la implementación completa de un pipeline de visión 
 
 > **Nota sobre los resultados y la reconstrucción 3D:** En la carpeta `resultados/` se incluyen las imágenes de inspección, las matrices calculadas, los pares rectificados y las imágenes de los mapas de disparidad obtenidos (SGBM y RAFT). Dado que los datos de la nube de puntos 3D tienen un peso considerable y requieren rendering dinámico para interactuar con ellos (rotación, zoom y desplazamiento), **la reconstrucción 3D debe visualizarse directamente dentro del cuaderno** `notebooks/Reconstruccion_Estereo.ipynb`.
 
+> **Nota sobre las rutas de ejecución:** Este proyecto fue desarrollado y probado directamente dentro del entorno de Google Colab montado en Google Drive. Si deseas volver a ejecutar el cuaderno `notebooks/Reconstruccion_Estereo.ipynb`, **únicamente debes ajustar la variable de ruta base** `(BASE_DIR)` en el primer bloque de código para que apunte a la carpeta correspondiente en tu propia unidad.
+
 ---
 
 ## ⚙️ Flujo de Trabajo
